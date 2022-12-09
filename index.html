@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="header">
+    <img src="./img/hedg-left.png" alt="" class="hedg-left">
+    <img src="./img/hedg-right.png" alt="" class="hedg-right">
+
+    <div class="navbar">
+      <img src="./img/Logo.svg" class="navbar__logo" alt="">
+      <div class="navbar__right">
+        <div class="navbar__links">
+          <div class="navbar__link">Каталог</div>
+          <div class="navbar__link">О нас</div>
+          <div class="navbar__link">Контакты</div>
+          <div class="navbar__link">Галерея</div>
+        </div>
+        <div class="navbar__number">
+          <img src="./img/phone.svg" alt="" class="navbar__number-image">
+          +7(965)569-89-98</div>
+        <div class="navbar__cart">
+          <img src="./img/cart.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="name">
+      <img src="./img/Ежи.svg" alt="">
+    </div>
+    <p class="name__text">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу мебель.</p>
+    <div class="bonk">Купить ёжика</div>
+    <div class="logo__items">
+      <div class="logo__item">
+        <div class="logo__img">
+          <img class="logo__img-icon" src="./img/hedgehog.svg" alt="">
+        </div>
+        <div class="item-title">
+          разведение ежиков
+        </div>
+        <div class="item-text">
+          Собственная ферма, уход и содержание
+        </div>
+      </div>
+
+      <div class="logo__item">
+        <div class="logo__img" style="background-color: #E2F0DF;">
+          <img class="logo__img-icon" src="./img/syringe.svg" alt="">
+        </div>
+        <div class="item-title">
+          здоровье
+        </div>
+        <div class="item-text">
+          Всегда прививаем и вовремя обследуем ваших будущих питомцев
+        </div>
+      </div>
+
+      <div class="logo__item">
+        <div class="logo__img" style="background-color: #70908B;">
+          <img class="logo__img-icon" src="./img/heart.svg" alt="">
+        </div>
+        <div class="item-title">
+          любовь и забота
+        </div>
+        <div class="item-text">
+          Каждому ежику мы дарим много внимания
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="cards">
+    <img src="./img/arr_left.svg" alt="slider">
+
+    <div class="cards__card">
+      <div class="card_name">
+        <h4 class="card_name-h4">Ежик “Евгений”</h4>
+        <p class="card_name-p">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой.
+          Ручной, любит внимание </p>
+        <p class="card_price">3 000 ₽</p>
+        <p class="card_price-action">1 500 ₽</p>
+      </div>
+      <div class="card_img"><img src="./img/evgen.png" alt="hed-card"></div>
+
+    </div>
+    <div class="cards__card cards__card2">
+      <div class="card_name">
+        <h4 class="card_name-h4">Ежик “Максим”</h4>
+        <p class="card_name-p">Немного игривый и задорный характер этого друга никого не оставит равнодушным!
+        </p>
+        <p class="card_price price2">5 000 ₽</p>
+        <p class="card_price-action">2 500 ₽</p>
+      </div>
+      <div class="card_img"><img src="./img/max.png" alt="hed-card"></div>
+
+    </div>
+    <img src="./img/arr_right.svg" alt="slider2">
+  </section>
+  <form class="form">
+    <h2 class="form__title">Заполните заявку и мы забронируем для Вас нового друга</h2>
+
+    <div class="form__buttons">
+      <div class="form__bonk">
+        <button class="myself">хочу ёжика для себя</button>
+        <button class="children">хочу ёжика для детей</button>
+        <button class="sex">хочу ёжика для разведения</button>
+      </div>
+      <div class="form__label">
+        <div class="form__lab">
+          <div class="check">
+            <input type="radio" id="one" checked>
+            <label for="one">Мне нужен 1-2 ёжика</label>
+          </div>
+
+          <div class="check">
+            <input type="radio" id="two">
+            <label for="two">Мне нужны 3-4 ёжика</label>
+          </div>
+        </div>
+
+        <div class="form__lab">
+          <div class="check">
+            <input type="radio" id="three">
+            <label for="three">Мне нужны 3 и более ёжиков</label>
+          </div>
+
+          <div class="check">
+            <input type="radio" id="four">
+            <label for="four">Пока присматриваюсь</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form__inputs">
+      <input type="text" placeholder="Ваше имя" class="form_inp">
+      <input type="tel" placeholder="Ваш телефон" class="form_inp">
+      <input type="email" placeholder="Ваш e-mail" class="form_inp">
+    </div>
+    <textarea name="com" id="area" cols="30" rows="10" class="form_comments"
+              placeholder="Комментарий к заявке"></textarea>
+    <label for="area"></label>
+  </form>
+ <div class="buy">Купить ёжика</div>
+<h2 class="ost">
+
+  <img src="./img/hedgehog.svg" alt="">
+  У наc осталось еще: <span class="ost1"> 25 ёжиков</span></h2>
+<p class="sale">Торопитесь! Акция действует до 26. 02. 2023</p>
+  <div class="footer">
+    <div class="footer__logo">
+      <img class="footer__logo-img" src="./img/Logo.svg" alt="">
+      <div class="footer__logo-text">
+        <p>Все права защищены.</p>
+        <p>Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</p>
+      </div>
+    </div>
+
+    <div class="footer__right">
+      <div class="footer__links">
+        <div class="footer__link">Каталог</div>
+        <div class="footer__link">О нас</div>
+        <div class="footer__link">Контакты</div>
+        <div class="footer__link">Галерея</div>
+      </div>
+
+      <div class="footer__socials">
+        <img src="./img/ig.svg" class="footer__social">
+        <img src="./img/fb.svg" class="footer__social">
+        <img src="./img/tw.svg" class="footer__social">
+      </div>
+
+      <div class="footer__number">+7(965)569-89-98</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&family=Raleway:wght@400;500;700&display=swap');
+
+html, body {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+}
+
+.hedg-left {
+  position: absolute;
+  top: 586px;
+  transform: rotateX(10deg);
+}
+.hedg-right {
+  position: absolute;
+  top: 729px;
+  right: 0;
+}
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: url("./img/header-bg.jpg") no-repeat center/cover;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 37px 67px 0;
+}
+.navbar__logo{}
+.navbar__right {
+  display: flex;
+  align-items: center;
+}
+.navbar__links {
+  display: flex;
+  margin-right: 132px;
+}
+
+.navbar__link {
+  font-family: 'Cormorant Infant', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #195557;
+}
+.navbar__link:not(:last-child){
+  margin-right: 90px;
+}
+
+.navbar__number{
+  font-family: 'Raleway', serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #195557;
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+}
+.navbar__number-image {
+  margin-right: 20px;
+}
+
+.navbar__cart {
+  position: relative;
+}
+.navbar__cart:after {
+  font-family: 'Raleway', serif;
+  padding: 3px 7px 4px;
+  content: '1';
+  position: absolute;
+  background: #FFEDCD;
+  border-radius: 50%;
+  right: -5px;
+  top: -5px;
+}
+.name{
+  margin: 202px auto 0;
+
+}
+.name__text{
+  margin: 100px auto 0;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #70908B;
+}
+.bonk{
+  font-family: 'Raleway', serif;
+  background-color: #70908B;;
+  color: #fff;
+  width: fit-content;
+  margin: 30px auto 86px;
+  border-radius: 40px;
+  padding: 26px 116px;
+}
+
+
+.logo__items {
+  margin: 126px auto 0;
+  display: flex;
+}
+
+.logo__item {
+  width: 182px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.logo__item:not(:last-child) {
+  margin-right: 155px;
+}
+.logo__item:first-child, .logo__item:last-child {
+  margin-top: 23px;
+}
+.logo__img {
+  margin-bottom: 30px;
+  background: #FFEDCD;
+  box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+  display: flex;
+  height: 152px;
+  width: 152px;
+  border-radius: 50%;
+}
+.logo__img-icon {
+  margin: auto;
+}
+.item-title {
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  color: #195557;
+}
+.item-text {
+  color: #195557;
+  font-family: 'Raleway', serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.cards {
+  width: 1297px;
+  display: flex;
+  margin: auto;
+
+}
+
+.cards__card {
+  position: relative;
+  width: 570px;
+  height: 397px;
+  background: url(./img/sb1.svg);
+  display: flex;
+  margin: auto auto 90px;
+
+}
+
+.cards__card::after {
+  content: '-50 %';
+  position: absolute;
+  top: -5px;
+  left: 62px;
+  padding: 6px 7px;
+  background: #70908B;
+  color: #FFFFFF;
+  font-family: 'Raleway', serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  font-feature-settings: 'pnum'on, 'lnum'on;
+}
+
+.cards__card2 {
+  background: url(./img/sb2.svg);
+}
+
+.cards__card::before {
+  content: url(./img/inf.svg);
+  position: absolute;
+  left: 500px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.card_name {
+  padding-top: 54px;
+  margin-left: 59px;
+}
+
+.card_name-h4 {
+  font-family: 'Cormorant Infant', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #195557;
+}
+
+.card_name-p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  margin-top: 17px;
+  width: 182px;
+}
+
+.card_price {
+  font-family: 'Cormorant Infant', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration-line: line-through;
+  color: #C2CCCA;
+  margin-top: 7px;
+}
+
+.price2 {
+  margin-top: 30px;
+}
+
+.card_price-action {
+  font-family: 'Cormorant Infant', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #195557;
+}
+
+.card_img {
+  position: relative;
+  max-width: 340px;
+  margin-top: 100px;
+  left: -30px;
+}
+
+.card_img::before {
+  content: url(./img/plus.svg);
+  position: absolute;
+  top: 270px;
+  left: 320px;
+  cursor: pointer;
+}
+
+.form {
+  background-color: #EAEEEF;
+  width: 1197px;
+  border-radius: 30px;
+  margin: auto;
+}
+.form__buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.form__title{
+  font-family: 'Cormorant Infant', serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  color: #195557;
+}
+.form__bonk{
+  width: 567px;
+  display: inline-block;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.myself {
+  background: #70908B !important;
+  color: #FFFFFF !important;
+}
+.myself, .children, .sex {
+  padding: 16px 20px;
+  background: #FFFFFF;
+  border: 2px solid #70908B;
+  border-radius: 61px;
+  color: #70908B;
+  font-family: 'Cormorant Infant', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 9px
+}
+.form__label {
+  font-family: 'Cormorant Infant', serif;
+  display: flex;
+  justify-content: space-between;
+  width: 391px;
+  margin-top: 30px;
+  align-items: center;
+  color: #70908B;
+}
+#one, #three{
+  margin-bottom: 14px;
+}
+.form__inputs {
+  display: flex;
+  justify-content: space-between;
+  margin: 34px 50px 0;
+}
+
+.form_inp {
+  width: 33%;
+  padding: 23px 27px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #195557;
+  border: none;
+  background: #F8F8F8;
+  border-radius: 8px;
+  outline: none;
+}
+.form_inp:not(:last-child) {
+  margin-right: 20px;
+}
+
+.form_comments {
+  width: 1096px;
+  height: 108px;
+  padding: 21px 28px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  background: #F8F8F8;
+  color: #195557;
+  border: none;
+  outline: none;
+  margin: 20px 50px 25px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.buy{
+  font-family: 'Raleway', serif;
+  background-color: #70908B;;
+  color: #fff;
+  width: fit-content;
+  margin: 30px auto 86px;
+  border-radius: 40px;
+  padding: 26px 116px;
+}
+.ost{
+  font-family: 'Cormorant Infant', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #195557;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ost1{
+  text-decoration: underline;
+  margin-left: 6px;
+}
+.sale {
+  font-family: 'Raleway', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #195557;
+  width: 191px;
+  margin: 0 auto 60px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 60px 30px;
+  background-color: #70908B;
+  color: #fff;
+  font-family: 'Cormorant Infant', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.footer__logo-text {
+  font-family: 'Raleway', serif;
+  font-size: 9px;
+}
+.footer__right {
+  display: flex;
+}
+.footer__links {
+  display: flex;
+  margin-right: 104px;
+}
+.footer__link:not(:last-child) {
+  margin-right: 90px;
+}
+
+.footer__socials {
+  margin-right: 76px;
+  display: flex;
+}
+.footer__social {
+  width: 30px;
+  height: 30px;
+}
+.footer__social:not(:last-child) {
+  margin-right: 23px;
+}
+
+.footer__number {
+  font-family: 'Raleway', serif;
+  font-weight: 500;
+  font-size: 22px;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+}
